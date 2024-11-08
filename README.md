@@ -1,52 +1,81 @@
-# Webscraping and Analyzing Data on Notable Firms in Nigeria.
+# Webscraping and Analyzing Data on Notable Firms in Nigeria
+
 ![](first_image.png)
+
+---
+
 ## Introduction
+
 I have been tasked by a Nigerian government parastatal with gathering data from a federal government website that contains information about various notable firms in Nigeria, dating back to the 1890s. The objective is to create a visual representation of these firms' ages and analyze how many of them are still active, among other insights. To achieve this, I will employ web scraping techniques, HTML manipulation, and Python for data analysis and visualization—all within [this Jupyter Notebook](webscrape%20(1).ipynb).
 
-## Problem Statement
--	What is the comparative age distribution of the notable firms?
--	What percentage of them are inactive?
--	What is the number of company (by sector) established each year?
+---
 
+## Problem Statement
+
+- What is the comparative age distribution of the notable firms?
+- What percentage of them are inactive?
+- What is the number of companies (by sector) established each year?
+
+---
 
 ## Skills/Concepts Demonstrated
-- Webscraping 
-- Html Manipulation
-- Python analytics and Visualization
+
+- Webscraping  
+- HTML Manipulation  
+- Python Analytics and Visualization
+
+---
 
 ## Data Sourcing and Description
-### Sourcing
-The data was scraped from a HTML Table in this website https://en.wikipedia.org/wiki/List_of_companies_of_Nigeria ,into a Jupyter Notebook, and converted into a Pandas DataFrame.
-The HTML table consists of a real-world dataset which contains 51 rows and 7 columns as tabularized with their descriptions below: 
 
-### Description
-Columns | Description
-:-----------:|:----------------------:
-Name | The Name of the Firm
-Industry	| The industry each firm belongs to
-Sector	 | The sector each firm belongs to
-Headquarters | The headquarter location in Nigeria
-Founded	| The year each firm was founded
-Note | Further description of the firm
-Private/State| ‘P’/’S’ identifies whether it is currently private or state owned
-Active/Defunct | ‘A’/’D’ identifies whether it is currently active or inactive
+### Sourcing
+
+The data was scraped from an HTML table on this [Wikipedia page](https://en.wikipedia.org/wiki/List_of_companies_of_Nigeria) into a Jupyter Notebook and then converted into a Pandas DataFrame. The HTML table consists of a real-world dataset with 51 rows and 7 columns, described as follows:
+
+---
+
+### Description of Data Columns
+
+| **Column**      | **Description**                                          |
+|-----------------|----------------------------------------------------------|
+| Name            | The name of the firm.                                    |
+| Industry        | The industry to which the firm belongs.                  |
+| Sector          | The sector the firm belongs to.                          |
+| Headquarters    | The location of the firm's headquarters in Nigeria.      |
+| Founded         | The year the firm was founded.                           |
+| Note            | Additional information about the firm.                   |
+| Private/State   | Indicates whether the firm is private ('P') or state-owned ('S'). |
+| Active/Defunct  | Indicates whether the firm is active ('A') or defunct ('D'). |
+
+---
+
 ## Methodology and Findings
+
 ### Methodology
-#### Library and Modules Used
-Using the code below, the following were imported into Jupyter Notebook
+
+#### Libraries and Modules Used
+
+The following libraries were imported into the Jupyter Notebook to perform web scraping, data manipulation, and analysis:
+
 ```python
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 import lxml
-print ('all libraries were installed')
+print('All libraries were installed')
 ```
--	requests (for getting the HTML content of the webpage)
--	BeautifulSoup (for parsing the content using lxml) 
--	lxml (was discovered by me to be the most suitable parser)
--	pandas (to create data frame(s) for convenient analysis)
-#### Scraping the Raw HTML Table content
-I used the [inspect] option to view the raw HTML structure of the website and the HTML table I desired to scrape; which I discovered was classified as “wikitable sortable”. This was then included as code parameter in finding the table.
+
+- **requests**: To get the HTML content of the webpage.
+- **BeautifulSoup**: For parsing the content using the `lxml` parser.
+- **lxml**: The parser found to be the most suitable for this task.
+- **pandas**: To create DataFrames for convenient data manipulation and analysis.
+
+---
+
+#### Scraping the Raw HTML Table Content
+
+To extract the desired table from the webpage, I used the [Inspect Element] option to identify the HTML structure. The table was classified as `wikitable sortable`, which allowed me to extract it using the following code:
+
 ```python
 url = 'https://en.wikipedia.org/wiki/List_of_companies_of_Nigeria'
 response = requests.get(url)
@@ -54,102 +83,151 @@ soup = BeautifulSoup(response.content, 'lxml')
 Table1 = soup.find_all('table', class_="wikitable sortable")
 Table1
 ```
-#### Getting Table Headers and body
-The following code was used to get the table headers. 
+[click here to view the HTML Table](html_output.html)
+
+---
+
+#### Getting Table Headers and Body
+
+The following code was used to retrieve the table headers:
+
 ```python
-ths = soup.find_all('th') #the '==$0' in the table structure would not allow me get all 'th' tags in the table
-header_texts = [th.text.strip() for th in ths] #so I first extract all the 'th' tags in the page
-first_seven_ths = ths[:7] #from the output above, the first seven (from Name to Status) are the text that I want
+ths = soup.find_all('th')
+header_texts = [th.text.strip() for th in ths] 
+first_seven_ths = ths[:7]  # Extracting first seven headers (Name to Status)
 table_head = [th.text.strip() for th in first_seven_ths]
 print(table_head)
 ```
-Because of the ‘==$0’ here and there in the HTML structure of the page, it made extracting the table body impossible with the conventional methods. So I copied the table from the raw html into a variable ‘tbody_html_content’. Using BeautifulSoup and a ‘for loop’ I was able to parse the content and iterate through it; extracting only the text into variable ‘cells’. ‘cells’ was fitted into a dataframe and the table was ready for analysis, all using the code below.
-####Data Transformation
-In order to make the data suitable for the first visualization, I first sorted all the rows in the table according to the years (in ascending order), used the datetime module to fetch the current date, converted the type in the year column from string to integer, then created a new column called ‘Age’ which is the subtraction of current year with that of the founded years.
+[click here to view the screenshot containing this code's output](table_headers.png)
+
+Because of some `== $0` elements in the HTML structure (as noticeable from the first image in this documentation), it was difficult to extract the table body using conventional methods. Instead, I copied the table's raw HTML content into a variable `tbody_html_content`, then parsed and iterated through it using a `for loop` to extract only the text. This data was then converted into a DataFrame, making it ready for analysis.
+
+---
+
+#### Data Wrangling
+
+To prepare the data for visualization, I sorted the rows by the "Founded" year in ascending order, used Python’s `datetime` module to fetch the current year, and created a new column called `Age`, which is the difference between the current year and the founded year:
+
 ```python
 df = df.sort_values(by='Founded', ascending=True)
-# to visualize age of each company
 from datetime import datetime
 import matplotlib.pyplot as plt
 current_year = datetime.now().year
 df['Founded'] = df['Founded'].astype(int)
-df['Age'] = current_year - df['Founded'] #current year minus yearfounded
+df['Age'] = current_year - df['Founded']
 ```
-For the third question, I had to create a new data frame which contained only three column using…
+
+Additionally, to answer the third question in the problem statement, I created a new DataFrame that grouped the data by year and sector to count the number of firms established each year:
+
 ```python
 df.groupby(['Founded', 'Sector']).size().reset_index(name='Count')
 ```
-to fetch the columns that contain the year, the secotr and to create one that contains the count of each sector per year.
+
+---
+
 #### Visualization
-##### Bar Chart
-To answer the first question in the problem statement above (What is the comparative age distribution of the notable firms?). The following code was used to generate a bar chart:
+
+##### Bar Chart: Age Distribution of Notable Firms
+
+To answer the first question (What is the comparative age distribution of the notable firms?), a bar chart was created with the following code:
+
 ```python
-# PLOTTING A BAR CHART
-plt.figure(figsize=(14, 8)) # the number of firms require this size for readability
+plt.figure(figsize=(14, 8))
 plt.bar(df['Name'], df['Age'], color='skyblue', edgecolor='black')
 
 plt.title('Age of Notable Firms in Nigeria')
 plt.xlabel('Firm Name')
 plt.ylabel('Age (Years)')
 plt.xticks(rotation=45, ha='right')
-plt.grid(axis='y', alpha=0.75) #75% opacity for a clearer visualization
+plt.grid(axis='y', alpha=0.75)
 plt.tight_layout()
 
 plt.show()
 ```
-##### Pie Chart
-To answer the second question in the problem statement above (What percentage of them are inactive?). The following code was used to generate a pie chart:
-```python 
-# The number of active and defunct companies
+
+---
+
+##### Pie Chart: Percentage of Active vs Defunct Firms
+
+To answer the second question (What percentage of firms are inactive?), a pie chart was created using the following code:
+
+```python
 status_counts = df['Active/Defunct'].value_counts()
 labels = ['Active', 'Defunct']
 sizes = [status_counts.get('A', 0), status_counts.get('D', 0)]
 
-plt.figure(figsize=(6, 4))  # Size of the pie chart
+plt.figure(figsize=(6, 4))
 plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90, colors=['skyblue', 'lightcoral'])
 plt.title('Percentage of Active vs Defunct Companies')
-plt.axis('equal') 
+plt.axis('equal')
 
 plt.show()
 ```
-##### Scatter Plot
-To answer the third question in the problem statement above (What is the number of company (by sector) established each year?). I figured that a scatter plot would do justice to the visualization, and I was right! The following code was used to generate a scatter plot:
+
+---
+
+##### Scatter Plot: Companies Established by Sector and Year
+
+To answer the third question (What is the number of companies established by sector each year?), a scatter plot was created:
+
 ```python
-#To visualize the count of each sector by year
 import seaborn as sns
-# to group the df by Year and Sector to get counts
 sector_year_counts = df.groupby(['Founded', 'Sector']).size().reset_index(name='Count')
-sector_year_counts
 sns.scatterplot(data=sector_year_counts, x='Sector', y='Founded', size='Count', 
                 sizes=(50, 1000), hue='Sector', palette='Set2', legend=False, marker='o')
 
 plt.title('Count of Companies by Sector and Year Founded', fontsize=16)
 plt.xlabel('Sector', fontsize=12)
 plt.ylabel('Year Founded', fontsize=12)
-plt.xticks(rotation=45, ha='right')  # Rotate x-axis labels for better readability
+plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 
 plt.show()
 ```
-### Findings 
-{![](image.png)}. From the first visualization, the follow are noticeable:
--	First Bank is the oldest of the notable firms.
--	Dotts Media House and Jiji.ng (an online shop) are the youngest of them.
--	The history of Nigeria in one visualization.
--	First Bank marked the beginning of a more advance relationship between Nigeria and England.
--	Economic growth through international trade called for fast means of the movement of goods, Thus the Nigerian Railway company.
--	Discovery of Crude Oil in Nigeria attracted Shell, a foreign company.
--	The limitations of railways led to the need of road networks and related infrastructure which the Julius Berger Company took advantage of to start such projects.
--	The presence of several banks, as well as the failure of many, led to the building of the Central Bank of Nigeria to oversee all banks and regulate the National Currency.
 
-{![](image.png)}.
-From the second Visualization, the following is also clear:
--	Only 2% of the firms are currently defunct. This is remarkable as it reveals the ability of these firms to stand through the various seasons of Nigeria’s economic fluctuations
+---
 
-{![](image.png)}.
-From the last visualization, one can observe the following:
--	Of all the notable firms, more Banks have been built from the late 1800s up until the last decade.
--	Airlines started appearing from after WW2 in 1945 (as is general Nigerian History knowledge).
--	Internet and Digital marketing firms emerged during the early 21st century (this is historically known as the early phase of the Internet/Digital age in Nigeria)
-##Conslusion
-This project has utilized python code to perform Webscraping, HTML manipulation, Data Analysis and Visualization to reveal the deep insight a seemingly basic dataset, showing and strengthening concepts and knowledge surrounding the Historical landscape of Nigeria as an economy.
+## Findings
+
+---
+
+### First Visualization: Age Distribution of Firms
+
+![](image.png)
+
+From the bar chart, the following insights are noticeable:
+
+- **First Bank** is the oldest firm among the notable firms.
+- **Dotts Media House** and **Jiji.ng** (an online shop) are the youngest.
+- The history of Nigeria is captured in one visualization.
+- **First Bank** marks the beginning of a more advanced relationship between Nigeria and England.
+- The growth of international trade led to the establishment of the **Nigerian Railway Company**.
+- The discovery of crude oil attracted foreign companies like **Shell**.
+- The limitations of railways led to the construction of road networks by **Julius Berger**.
+- The failure of many banks led to the creation of the **Central Bank of Nigeria**.
+
+---
+
+### Second Visualization: Active vs Defunct Firms
+
+![](image.png)
+
+From the pie chart, it is clear that only **2%** of the firms are currently defunct. This is a remarkable finding, showing that the firms have weathered Nigeria's economic fluctuations.
+
+---
+
+### Third Visualization: Companies Established by Sector and Year
+
+![](image.png)
+
+From the scatter plot, we can observe:
+
+- More **banks** were established from the late 1800s through the last decade.
+- **Airlines** started appearing after World War II, around 1945.
+- **Internet and digital marketing firms** began emerging in the early 21st century, marking the start of the digital age in Nigeria.
+
+---
+
+## Conclusion
+
+This project utilized Python for web scraping, HTML manipulation, data analysis, and visualization to uncover insights from a seemingly basic dataset. It highlights significant trends in the historical development of Nigeria's economy, providing a deeper understanding of the notable firms and their impact on the nation’s economic landscape.
