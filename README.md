@@ -23,6 +23,7 @@ I have been tasked by a Nigerian government parastatal with gathering data from 
 - Webscraping  
 - HTML Manipulation  
 - Python Analytics and Visualization
+- For Loops
 
 ---
 
