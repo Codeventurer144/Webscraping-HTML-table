@@ -100,7 +100,23 @@ print(table_head)
 ```
 [click here to view the screenshot containing this code's output](table_headers.png)
 
-Because of some `== $0` elements in the HTML structure (as noticeable from the first image in this documentation), it was difficult to extract the table body using conventional methods. Instead, I copied the table's raw HTML content into a variable `tbody_html_content`, then parsed and iterated through it using a `for loop` to extract only the text. This data was then converted into a DataFrame, making it ready for analysis.
+Because of some `== $0` elements in the HTML structure (as noticeable from the first image in this documentation), it was difficult to extract the table body using conventional methods. Instead, I copied the table's raw HTML content into a variable `tbody_html_content`, then parsed and iterated through it using a `for loop` to extract only the text as a one  dimensional list '`cells`' which was converted into a 2d list as '`celldata`' for recognition by the PandasDataframe.
+
+```python
+soup2 = BeautifulSoup(tbody_html_content, 'lxml') #parsing the html-content with lxml
+headers = ['Name', 'Industry', 'Sector', 'Headquarters', 'Founded', 'Notes', 'Private/State', 'Active/Defunct'] #edited the extracted headers
+table_data = []
+for row in soup2.find('tbody').find_all('tr'): 
+    cells = [td.text.strip() for td in row.find_all('td')]
+    print (cells)
+```
+---
+`'celldata'` was then converted into a DataFrame, making it ready for analysis.
+```python
+df = pd.DataFrame(celldata, columns=headers)
+df.head(30) # to get the first 30 rows
+```
+[click here to view the resulting Data Frame](df_glimpse.png)
 
 ---
 
@@ -117,7 +133,7 @@ df['Founded'] = df['Founded'].astype(int)
 df['Age'] = current_year - df['Founded']
 ```
 
-Additionally, to answer the third question in the problem statement, I created a new DataFrame that grouped the data by year and sector to count the number of firms established each year:
+Additionally, to answer the third question in the problem statement, I created a new DataFrame that grouped the data by year and sector to count the number of each of the sectors established each year:
 
 ```python
 df.groupby(['Founded', 'Sector']).size().reset_index(name='Count')
@@ -193,7 +209,7 @@ plt.show()
 
 ### First Visualization: Age Distribution of Firms
 
-![](image.png)
+![](notable_firms_age.png)
 
 From the bar chart, the following insights are noticeable:
 
@@ -210,7 +226,7 @@ From the bar chart, the following insights are noticeable:
 
 ### Second Visualization: Active vs Defunct Firms
 
-![](image.png)
+![](active_firms.png)
 
 From the pie chart, it is clear that only **2%** of the firms are currently defunct. This is a remarkable finding, showing that the firms have weathered Nigeria's economic fluctuations.
 
@@ -218,7 +234,7 @@ From the pie chart, it is clear that only **2%** of the firms are currently defu
 
 ### Third Visualization: Companies Established by Sector and Year
 
-![](image.png)
+![](yearly_sector_count.png)
 
 From the scatter plot, we can observe:
 
