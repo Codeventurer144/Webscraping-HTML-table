@@ -1,6 +1,7 @@
 # Webscraping and Analyzing Data on Notable Firms in Nigeria.
+![](first_image.png)
 ## Introduction
-Assuming I was given a job by a Nigerian Government Parastatal to fetch some data on a Federal government website containing the names of, and other information about several notable firms in Nigeria since the 1890s with the aim of creating a visual representation of their age and how many of them are still active, amongst other purposes. I am to use webscraping, HTML manipulation, as well as python analytic and visualization skills—all in Jupyter notebooks—to get the requested analysis.
+I have been tasked by a Nigerian government parastatal with gathering data from a federal government website that contains information about various notable firms in Nigeria, dating back to the 1890s. The objective is to create a visual representation of these firms' ages and analyze how many of them are still active, among other insights. To achieve this, I will employ web scraping techniques, HTML manipulation, and Python for data analysis and visualization—all within [this Jupyter Notebook](webscrape%20(1).ipynb).
 
 ## Problem Statement
 -	What is the comparative age distribution of the notable firms?
