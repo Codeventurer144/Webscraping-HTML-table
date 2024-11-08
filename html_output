@@ -1,0 +1,876 @@
+```html
+[<table class="wikitable sortable">
+ <caption>Notable companies <br/>
+ <span style="font-size:smaller;">Status: P=Private, S=State; A=Active, D=Defunct</span>
+ </caption>
+ <tbody><tr>
+ <th rowspan="2">Name
+ </th>
+ <th rowspan="2">Industry
+ </th>
+ <th rowspan="2">Sector
+ </th>
+ <th rowspan="2">Headquarters
+ </th>
+ <th rowspan="2">Founded
+ </th>
+ <th class="unsortable" rowspan="2">Notes
+ </th>
+ <th colspan="2">Status
+ </th></tr>
+ <tr>
+ <th style="text-align:center"> 
+ </th>
+ <th style="text-align:center"> 
+ </th></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Access_Bank_plc" title="Access Bank plc">Access Bank</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1989
+ </td>
+ <td>Commercial bank
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#efefef;">
+ <td><a href="/wiki/Aero_Contractors_(Nigeria)" title="Aero Contractors (Nigeria)">Aero Contractors</a>
+ </td>
+ <td>Consumer services
+ </td>
+ <td>Airlines
+ </td>
+ <td><a href="/wiki/Ikeja" title="Ikeja">Ikeja</a>
+ </td>
+ <td>1959
+ </td>
+ <td>State charter airline
+ </td>
+ <td style="text-align:center;">S
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Arik_Air" title="Arik Air">Arik Air</a>
+ </td>
+ <td>Consumer services
+ </td>
+ <td>Airlines
+ </td>
+ <td><a href="/wiki/Ikeja" title="Ikeja">Ikeja</a>
+ </td>
+ <td>2002
+ </td>
+ <td>Airline
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/BUA_Cement" title="BUA Cement">BUA Cement</a>
+ </td>
+ <td>Industrials
+ </td>
+ <td>Building materials &amp; fixtures
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>2008
+ </td>
+ <td>Cement, part of BUA Group
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/BUA_Foods" title="BUA Foods">BUA Foods</a>
+ </td>
+ <td>Consumer goods
+ </td>
+ <td>Food
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1988
+ </td>
+ <td>Food industry, part of BUA Group
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Cassava_Republic_Press" title="Cassava Republic Press">Cassava Republic Press</a>
+ </td>
+ <td>Consumer services
+ </td>
+ <td>Publishing
+ </td>
+ <td><a href="/wiki/Abuja" title="Abuja">Abuja</a>
+ </td>
+ <td>2006
+ </td>
+ <td>Publisher
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#efefef;">
+ <td><a href="/wiki/Central_Bank_of_Nigeria" title="Central Bank of Nigeria">Central Bank of Nigeria</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Abuja" title="Abuja">Abuja</a>
+ </td>
+ <td>1958
+ </td>
+ <td>State-owned bank
+ </td>
+ <td style="text-align:center;">S
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Chanchangi_Airlines" title="Chanchangi Airlines">Chanchangi Airlines</a>
+ </td>
+ <td>Consumer services
+ </td>
+ <td>Airlines
+ </td>
+ <td><a href="/wiki/Kaduna" title="Kaduna">Kaduna</a>
+ </td>
+ <td>1994
+ </td>
+ <td>Airline
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/C%26I_Leasing_Group_PLC" title="C&amp;I Leasing Group PLC">C&amp;I Leasing Group PLC</a>
+ </td>
+ <td>Industrials
+ </td>
+ <td>Marine transportation
+ </td>
+ <td><a href="/wiki/Lekki" title="Lekki">Lekki</a>
+ </td>
+ <td>1990
+ </td>
+ <td>Leasing
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a class="mw-redirect" href="/wiki/Chocolate_City_(music_label)" title="Chocolate City (music label)">Chocolate City Records</a>
+ </td>
+ <td>Consumer services
+ </td>
+ <td>Broadcasting &amp; entertainment
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>2005
+ </td>
+ <td>Music label founded by <a href="/wiki/Audu_Maikori" title="Audu Maikori">Audu Maikori</a>
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Dana_Air" title="Dana Air">Dana Air</a>
+ </td>
+ <td>Consumer services
+ </td>
+ <td>Airlines
+ </td>
+ <td><a href="/wiki/Ikeja" title="Ikeja">Ikeja</a>
+ </td>
+ <td>2008
+ </td>
+ <td>Regional airline
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Dangote_Cement" title="Dangote Cement">Dangote Cement</a>
+ </td>
+ <td>Industrials
+ </td>
+ <td>Building materials &amp; fixtures
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1992
+ </td>
+ <td>Cement, part of <a href="/wiki/Dangote_Group" title="Dangote Group">Dangote Group</a>
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Dangote_Group" title="Dangote Group">Dangote Group</a>
+ </td>
+ <td>Conglomerates
+ </td>
+ <td>–
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1981
+ </td>
+ <td>Cement, food and beverage, oil and gas
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Diamond_Bank" title="Diamond Bank">Diamond Bank</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1990
+ </td>
+ <td>Bank
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a class="mw-redirect" href="/wiki/Ensure_insurance_(Nigeria)" title="Ensure insurance (Nigeria)">Ensure</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Full line insurance
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1993
+ </td>
+ <td>Insurance
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/First_City_Monument_Bank" title="First City Monument Bank">First City Monument Bank</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1982
+ </td>
+ <td>Bank
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Fidelity_Bank_Nigeria" title="Fidelity Bank Nigeria">Fidelity Bank Nigeria</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1988
+ </td>
+ <td>Bank
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/First_Bank_of_Nigeria" title="First Bank of Nigeria">First Bank of Nigeria</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1894
+ </td>
+ <td>Bank
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a class="mw-redirect" href="/wiki/Guaranty_Trust_Bank" title="Guaranty Trust Bank">Guaranty Trust Bank</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1990
+ </td>
+ <td>Bank
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Industrial_and_General_Insurance_Company" title="Industrial and General Insurance Company">Industrial and General Insurance Company</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Full line insurance
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1991
+ </td>
+ <td>Insurance
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a class="mw-redirect" href="/wiki/Jiji.ng" title="Jiji.ng">Jiji.ng</a>
+ </td>
+ <td>Technology
+ </td>
+ <td>Internet
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>2014
+ </td>
+ <td>Online marketplace
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/John_Holt_plc" title="John Holt plc">John Holt plc</a>
+ </td>
+ <td>Industrials
+ </td>
+ <td>Diversified industrials
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1897
+ </td>
+ <td>Industrials, power, logistics
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Julius_Berger_(company)" title="Julius Berger (company)">Julius Berger</a>
+ </td>
+ <td>Industrials
+ </td>
+ <td>Heavy construction
+ </td>
+ <td><a href="/wiki/Abuja" title="Abuja">Abuja</a>
+ </td>
+ <td>1950
+ </td>
+ <td>Construction and development
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Jumia" title="Jumia">Jumia</a>
+ </td>
+ <td>Technology
+ </td>
+ <td>Internet
+ </td>
+ <td><a href="/wiki/Ikeja" title="Ikeja">Ikeja</a>
+ </td>
+ <td>2012
+ </td>
+ <td>E-commerce platform
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Kabo_Air" title="Kabo Air">Kabo Air</a>
+ </td>
+ <td>Consumer services
+ </td>
+ <td>Airlines
+ </td>
+ <td><a href="/wiki/Kano_(city)" title="Kano (city)">Kano</a>
+ </td>
+ <td>1980
+ </td>
+ <td>Airline
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a class="mw-redirect" href="/wiki/Kakawa_Discount_House_Limited" title="Kakawa Discount House Limited">Kakawa Discount House Limited</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Investment services
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1995
+ </td>
+ <td>Discount house
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Keystone_Bank_Limited" title="Keystone Bank Limited">Keystone Bank Limited</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>2011
+ </td>
+ <td>Bank
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Leadway" title="Leadway">Leadway</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Full line insurance
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1970
+ </td>
+ <td>Insurance
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Mavin_Records" title="Mavin Records">Mavin Records</a>
+ </td>
+ <td>Consumer services
+ </td>
+ <td>Broadcasting &amp; entertainment
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>2012
+ </td>
+ <td>Music label founded by <a href="/wiki/Don_Jazzy" title="Don Jazzy">Don Jazzy</a>
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Mikano_International_Limited" title="Mikano International Limited">Mikano International Limited</a>
+ </td>
+ <td>Industrials
+ </td>
+ <td>Diversified industrials
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1993
+ </td>
+ <td>Electrical power generation, real estate and construction
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#efefef;">
+ <td><a class="mw-redirect" href="/wiki/Nigerian_National_Petroleum_Corporation" title="Nigerian National Petroleum Corporation">Nigerian National Petroleum Corporation</a> (NNPC)
+ </td>
+ <td>Oil &amp; gas
+ </td>
+ <td>Exploration &amp; production
+ </td>
+ <td><a href="/wiki/Abuja" title="Abuja">Abuja</a>
+ </td>
+ <td>1977
+ </td>
+ <td>State-owned oil
+ </td>
+ <td style="text-align:center;">S
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#efefef;">
+ <td><a href="/wiki/Nigerian_Postal_Service" title="Nigerian Postal Service">Nigerian Postal Service</a>
+ </td>
+ <td>Industrials
+ </td>
+ <td>Delivery services
+ </td>
+ <td><a href="/wiki/Abuja" title="Abuja">Abuja</a>
+ </td>
+ <td>1987
+ </td>
+ <td>Postal services
+ </td>
+ <td style="text-align:center;">S
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#efefef;">
+ <td><a href="/wiki/Nigerian_Railway_Corporation" title="Nigerian Railway Corporation">Nigerian Railway Corporation</a>
+ </td>
+ <td>Industrials
+ </td>
+ <td>Railroads
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1898
+ </td>
+ <td>National railways
+ </td>
+ <td style="text-align:center;">S
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#efefef;">
+ <td><a href="/wiki/Nigerian_Television_Authority" title="Nigerian Television Authority">Nigerian Television Authority</a>
+ </td>
+ <td>Consumer services
+ </td>
+ <td>Broadcasting &amp; entertainment
+ </td>
+ <td><a href="/wiki/Abuja" title="Abuja">Abuja</a>
+ </td>
+ <td>1977
+ </td>
+ <td>State-owned television
+ </td>
+ <td style="text-align:center;">S
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Oando" title="Oando">Oando</a>
+ </td>
+ <td>Oil &amp; gas
+ </td>
+ <td>Exploration &amp; production
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1956
+ </td>
+ <td>Petrochemical and energy
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/ROCAD_Construction_Limited" title="ROCAD Construction Limited">ROCAD Construction Limited</a>
+ </td>
+ <td>Industrials
+ </td>
+ <td>Heavy construction
+ </td>
+ <td><a href="/wiki/Abuja" title="Abuja">Abuja</a>
+ </td>
+ <td>2002
+ </td>
+ <td>Construction
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Shell_Nigeria" title="Shell Nigeria">Shell Nigeria</a>
+ </td>
+ <td>Oil &amp; gas
+ </td>
+ <td>Exploration &amp; production
+ </td>
+ <td><a href="/wiki/Abuja" title="Abuja">Abuja</a>
+ </td>
+ <td>1937
+ </td>
+ <td>Part of <a class="mw-redirect" href="/wiki/Royal_Dutch_Shell" title="Royal Dutch Shell">Royal Dutch Shell</a> (Netherlands)
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a class="mw-redirect" href="/wiki/Skye_Bank" title="Skye Bank">Skye Bank</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>2006
+ </td>
+ <td>Has now been changed to Polaris Bank
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#e4e4e4;">
+ <td><a href="/wiki/Spring_Bank" title="Spring Bank">Spring Bank</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>2004
+ </td>
+ <td>Bank, defunct 2011
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">D
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Sterling_Bank_(Nigeria)" title="Sterling Bank (Nigeria)">Sterling Bank</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1960
+ </td>
+ <td>Bank
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#efefef;">
+ <td><i><a href="/wiki/The_Tide_(Nigeria)" title="The Tide (Nigeria)">The Tide</a></i>
+ </td>
+ <td>Consumer services
+ </td>
+ <td>Publishing
+ </td>
+ <td><a href="/wiki/Port_Harcourt" title="Port Harcourt">Port Harcourt</a>
+ </td>
+ <td>1971
+ </td>
+ <td>State-owned newspaper
+ </td>
+ <td style="text-align:center;">S
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#efefef;">
+ <td><a href="/wiki/Transmission_Company_of_Nigeria" title="Transmission Company of Nigeria">Transmission Company of Nigeria</a>
+ </td>
+ <td>Utilities
+ </td>
+ <td>Electricity transmission
+ </td>
+ <td><a href="/wiki/Abuja" title="Abuja">Abuja</a>
+ </td>
+ <td>2005
+ </td>
+ <td>Power
+ </td>
+ <td style="text-align:center;">S
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Transnational_Corporation_of_Nigeria" title="Transnational Corporation of Nigeria">Transnational Corporation of Nigeria</a>
+ </td>
+ <td>Conglomerates
+ </td>
+ <td>–
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>2004
+ </td>
+ <td>Food and beverage, power, hotels
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Union_Bank_of_Nigeria" title="Union Bank of Nigeria">Union Bank of Nigeria</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1917
+ </td>
+ <td>Bank
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/United_Africa_Company_of_Nigeria" title="United Africa Company of Nigeria">United Africa Company of Nigeria</a>
+ </td>
+ <td>Conglomerates
+ </td>
+ <td>–
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1931
+ </td>
+ <td>Logistics, real estate, industrials
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/United_Bank_for_Africa" title="United Bank for Africa">United Bank for Africa</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1949
+ </td>
+ <td>Bank
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Wema_Bank" title="Wema Bank">Wema Bank</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1945
+ </td>
+ <td>Bank
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Wemy_industries" title="Wemy industries">Wemy industries</a>
+ </td>
+ <td>Consumer
+ </td>
+ <td>Personal goods
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1978
+ </td>
+ <td>Personal hygiene products
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Zenith_Bank" title="Zenith Bank">Zenith Bank</a>
+ </td>
+ <td>Financials
+ </td>
+ <td>Banks
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>1990
+ </td>
+ <td>Commercial bank
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr>
+ <tr style="background:#ffffff;">
+ <td><a href="/wiki/Dotts_Media_House" title="Dotts Media House">Dotts Media House</a>
+ </td>
+ <td>Media
+ </td>
+ <td>PR &amp; Digital Marketing
+ </td>
+ <td><a href="/wiki/Lagos" title="Lagos">Lagos</a>
+ </td>
+ <td>2014
+ </td>
+ <td>Influencer Marketing, Content Marketing, Brand Activations
+ </td>
+ <td style="text-align:center;">P
+ </td>
+ <td style="text-align:center;">A
+ </td></tr></tbody></table>]
+</div>
