@@ -24,6 +24,7 @@ I have been tasked by a Nigerian government parastatal with gathering data from 
 - HTML Manipulation  
 - Python Analytics and Visualization
 - For Loops
+- Research Analytics
 
 ---
 
@@ -101,7 +102,7 @@ print(table_head)
 ```
 [click here to view the screenshot containing this code's output](table_headers.png)
 
-Because of some `== $0` elements in the HTML structure (as noticeable from the first image in this documentation), it was difficult to extract the table body using conventional methods. Instead, I copied the table's raw HTML content into a variable `tbody_html_content`, then parsed and iterated through it using a `for loop` to extract only the text as a one  dimensional list '`cells`' which was converted into a 2d list as '`celldata`' for recognition by the PandasDataframe.
+Because of some `== $0` elements in the HTML structure (as noticeable from the first image in this documentation), extraction of the table body using conventional methods proved difficult. Instead, I copied the table's raw HTML content into a variable `tbody_html_content`, then parsed and iterated through it using a `for loop` to extract only the text as a one  dimensional list '`cells`' which was converted into a 2d list as '`celldata`' for recognition by the PandasDataframe.
 
 ```python
 soup2 = BeautifulSoup(tbody_html_content, 'lxml') #parsing the html-content with lxml
@@ -112,7 +113,9 @@ for row in soup2.find('tbody').find_all('tr'):
     print (cells)
 ```
 ---
+
 `'celldata'` was then converted into a DataFrame, making it ready for analysis.
+
 ```python
 df = pd.DataFrame(celldata, columns=headers)
 df.head(30) # to get the first 30 rows
@@ -215,10 +218,9 @@ plt.show()
 From the bar chart, the following insights are noticeable:
 
 - **First Bank** is the oldest firm among the notable firms.
-- **Dotts Media House** and **Jiji.ng** (an online shop) are the youngest.
-- The history of Nigeria is captured in one visualization.
-- **First Bank** marks the beginning of a more advanced relationship between Nigeria and England.
-- The growth of international trade led to the establishment of the **Nigerian Railway Company**.
+- **Dotts Media House** and **Jiji.ng** (an online shop) are the newest.
+- The **First Bank** of Nigeria's advent marked the beginning of a period characterized by more advanced economic relationships between Nigeria and England as historical research also reveals.
+- The growth of international trade relations also led to the establishment of the **Nigerian Railway Company**.
 - The discovery of crude oil attracted foreign companies like **Shell**.
 - The limitations of railways led to the construction of road networks by **Julius Berger**.
 - The failure of many banks led to the creation of the **Central Bank of Nigeria**.
@@ -229,7 +231,7 @@ From the bar chart, the following insights are noticeable:
 
 ![](active_firms.png)
 
-From the pie chart, it is clear that only **2%** of the firms are currently defunct. This is a remarkable finding, showing that the firms have weathered Nigeria's economic fluctuations.
+From the pie chart, only **2%** of the firms are defunct. This remarkable finding, shows that these firms have weathered Nigeria's economic fluctuations.
 
 ---
 
@@ -237,10 +239,10 @@ From the pie chart, it is clear that only **2%** of the firms are currently defu
 
 ![](yearly_sector_count.png)
 
-From the scatter plot, we can observe:
+From the scatter plot, one can observe the following:
 
 - More **banks** were established from the late 1800s through the last decade.
-- **Airlines** started appearing after World War II, around 1945.
+- **Airlines** started emerging after World War II, around 1945 which is also historically correct.
 - **Internet and digital marketing firms** began emerging in the early 21st century, marking the start of the digital age in Nigeria.
 
 ---
