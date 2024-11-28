@@ -21,7 +21,8 @@ I have been tasked by a Nigerian government parastatal with gathering data from 
 ## Skills/Concepts Demonstrated
 
 - Webscraping  
-- HTML Manipulation  
+- HTML Manipulation
+- Statistics
 - Python Analytics and Visualization
 - For Loops
 - Research Analytics
